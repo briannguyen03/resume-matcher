@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Uploaded and temp files
+uploads/
+parsed/
+*.log
+
+# Output / result files
+*.json
+results/
+parsed_text.json
+
+# Secrets
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
