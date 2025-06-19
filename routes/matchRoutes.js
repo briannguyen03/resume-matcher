@@ -49,11 +49,15 @@ router.post('/upload', upload.fields([
     const topMatches = matchResults.filter(m => m.score >= THRESHOLD);
 
     if (topMatches.length > 0) {
-      await axios.post(n8nWebhookURL, {
-        resume: resumeFile.originalname,
-        matches: topMatches,
-        threshold: THRESHOLD
-      });
+      try {
+        await axios.post(n8nWebhookURL, {
+          resume: resumeFile.originalname,
+          matches: topMatches,
+          threshold: THRESHOLD
+        });
+      } catch (webhookError) {
+        console.warn('⚠️ Webhook failed:', webhookError.message);
+      }
     }
 
     res.json({
