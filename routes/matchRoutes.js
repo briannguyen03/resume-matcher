@@ -41,6 +41,21 @@ router.post('/upload', upload.fields([
       });
     }
 
+    const axios = require('axios');
+
+    const THRESHOLD = 0.50;
+    const n8nWebhookURL = 'https://n8n.develop.nexlesoft.io.vn/webhook-test/9d11b22d-af80-49e2-bf8f-cfc1b676437e';
+
+    const topMatches = matchResults.filter(m => m.score >= THRESHOLD);
+
+    if (topMatches.length > 0) {
+      await axios.post(n8nWebhookURL, {
+        resume: resumeFile.originalname,
+        matches: topMatches,
+        threshold: THRESHOLD
+      });
+    }
+
     res.json({
       resume: resumeFile.originalname,
       matches: matchResults
