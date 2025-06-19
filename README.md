@@ -1,3 +1,92 @@
+## ⚙️ Setup Instructions
+
+### 📦 Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+* [Node.js](https://nodejs.org/) (v18 or newer recommended)
+* [npm](https://www.npmjs.com/)
+* [curl](https://curl.se/) or [Postman](https://www.postman.com/) for API testing
+* An [OpenAI API key](https://platform.openai.com/account/api-keys)
+
+---
+
+### 📁 Project Installation
+
+```bash
+git clone https://github.com/your-username/resume-matcher.git
+cd resume-matcher
+npm install
+```
+
+---
+
+### 🔐 Configure Environment
+
+Create a `.env` file in the project root:
+
+```env
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxx
+```
+
+> Your OpenAI key is required to generate match scores.
+
+---
+
+### 🚀 Start the Server
+
+```bash
+node app.js
+```
+
+Server will start at:
+👉 `http://localhost:3000`
+
+---
+
+### 📄 Upload Resume & Job Descriptions
+
+You can test the API with `curl`:
+
+```bash
+curl -X POST http://localhost:3000/api/upload \
+  -F "resume=@uploads/BrianNguyen.pdf" \
+  -F "job=@uploads/job1.txt" \
+  -F "job=@uploads/job2.txt"
+```
+
+Or use Postman to POST to `/api/upload`
+Upload 1 resume + up to 10 job description files.
+
+---
+
+### ✉️ Optional: n8n Email Integration
+
+If match score ≥ threshold (default `0.50`), results can be POSTed to a [n8n webhook](https://n8n.io/).
+
+* Webhook is configurable in `matchRoutes.js`
+* n8n email node can format & send match results
+
+---
+
+### 🧾 Example Match Response
+
+```json
+{
+  "resume": "BrianNguyen.pdf",
+  "matches": [
+    {
+      "job": "google_swe.txt",
+      "score": 0.91
+    },
+    {
+      "job": "startup_fullstack.txt",
+      "score": 0.73
+    }
+  ]
+}
+```
+
 ## 📎 How to Format a Job Description for Best Matching Results 
 
 To get the most accurate match score from the resume matching system, write job descriptions in a clear, structured, and realistic format. The system works best with job posts that resemble real-world listings found on LinkedIn, Indeed, or company career pages.
