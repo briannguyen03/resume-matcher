@@ -1,0 +1,59 @@
+Data Engineering Intern (Remote – 3 Month Internship)
+
+Company:
+
+HIRIST – IT Recruitment Partner (Hiring for a Technology Client)
+Location:
+
+Remote
+Job Type:
+
+Internship | Remote | 3 Months
+
+
+About the Role:
+
+HIRIST is hiring Data Engineering Interns on behalf of a reputed IT client. This remote, part-time internship is ideal for individuals aiming to develop hands-on experience in managing and building data pipelines. Interns will work closely with the engineering and data teams to support the development of scalable data infrastructure and improve data reliability and accessibility.
+Key Responsibilities:
+
+Assist in building and maintaining efficient, scalable data pipelines.
+Help with data ingestion, transformation, and integration processes.
+Support ETL (Extract, Transform, Load) tasks using modern data tools.
+Work with large datasets to optimize performance and quality.
+Collaborate with data scientists and analysts to ensure data availability.
+Required Qualifications:
+
+Familiarity with SQL and relational databases.
+Basic understanding of data structures and data modeling.
+Good problem-solving and logical thinking skills.
+Ability to work independently in a remote environment.
+Preferred Qualifications:
+
+Exposure to tools like Apache Airflow, Spark, or Kafka.
+Basic experience with Python or Scala for scripting and automation.
+Knowledge of cloud platforms like AWS, Azure, or GCP.
+Previous academic or personal projects related to data pipeline development or big data handling.
+Internship Details:
+
+Duration: 3 months
+Hours: 15–20 hours/week
+Compensation: Paid internship (stipend provided)
+Completion: Certificate of internship provided upon successful completion
+Hiring Process:
+
+Resume Screening
+Basic Data Engineering Task
+Virtual Interview with Project Team
+Onboarding via HIRIST
+Additional Information:
+
+This is a fully remote position. A stable internet connection is essential.
+HIRIST acts as a recruitment partner for a verified IT client.
+The client organization's name will be disclosed to shortlisted candidates during the interview process.
+There are no fees or charges at any stage of the hiring process.
+
+
+Equal Opportunity Statement:
+
+HIRIST is an equal opportunity recruitment partner. We welcome candidates from all backgrounds, regardless of race, gender, disability, or any protected characteristics.
+

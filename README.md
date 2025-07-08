@@ -57,6 +57,9 @@ curl -X POST http://localhost:3000/api/upload \
 
 Or use Postman to POST to `/api/upload`
 Upload 1 resume + up to 10 job description files.
+Using Body form-data.
+Key: resume (file) for a resume
+Key: job (file [.txt]) for a job description
 
 ---
 
